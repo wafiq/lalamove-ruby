@@ -1,34 +1,56 @@
-# Lalamove
+# Lalamove API (V3) Ruby SDK
 
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/lalamove`. To experiment with that code, run `bin/console` for an interactive prompt.
+A Ruby SDK for the Lalamove V3 API, allowing you to easily integrate Lalamove's delivery services into your Ruby applications.
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+Add this line to your application's Gemfile:
 
-Install the gem and add to the application's Gemfile by executing:
+```ruby
+gem 'lalamove'
+```
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+Then, run `bundle install`. Or install the gem directly from the command line:
 
-If bundler is not being used to manage dependencies, install the gem by executing:
-
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```sh
+gem install lalamove
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'lalamove'
+
+client = Lalamove::Client.new(
+  api_key: 'your_api_key',
+  api_secret: 'your_api_secret',
+  market: 'my'
+)
+
+client.cities
+
+client.get_quotation(quotation_details)
+
+client.create_order(order_details)
+
+client.get_order(order_id)
+
+client.cancel_order(order_id)
+
+client.get_driver_details(order_id, driver_id)
+
+client.add_priority_fee(order_id, priority_fee)
+```
+
+Please refer to the [Lalamove API Documentation](https://developers.lalamove.com/#introduction) for more details on each endpoint and how to use them.
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To install this gem onto your local machine, run `bundle install`. Copy the `.env.example` file to `.env` and set the correct environment variables. Run `bundle exec rspec` to run the tests.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/lalamove. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/lalamove/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/wafiq/lalamove-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/wafiq/lalamove-ruby/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -36,4 +58,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Lalamove project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/lalamove/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Lalamove Ruby SDK project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/wafiq/lalamove-ruby/blob/main/CODE_OF_CONDUCT.md).
