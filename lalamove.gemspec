@@ -3,7 +3,7 @@
 require_relative "lib/lalamove/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "lalamove"
+  spec.name = "lalamove-ruby"
   spec.version = Lalamove::VERSION
   spec.authors = ["Wafiq Rodzuan"]
   spec.email = ["wafiqrodzuan@gmail.com"]
