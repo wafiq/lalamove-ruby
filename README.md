@@ -7,13 +7,13 @@ A Ruby SDK for the Lalamove V3 API, allowing you to easily integrate Lalamove's 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'lalamove'
+gem 'lalamove-ruby'
 ```
 
 Then, run `bundle install`. Or install the gem directly from the command line:
 
 ```sh
-gem install lalamove
+gem install lalamove-ruby
 ```
 
 ## Usage
@@ -50,7 +50,7 @@ To install this gem onto your local machine, run `bundle install`. Copy the `.en
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/wafiq/lalamove-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/wafiq/lalamove-ruby/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/maynuu/lalamove-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/maynuu/lalamove-ruby/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -58,4 +58,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Lalamove Ruby SDK project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/wafiq/lalamove-ruby/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Lalamove Ruby SDK project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/maynuu/lalamove-ruby/blob/main/CODE_OF_CONDUCT.md).
